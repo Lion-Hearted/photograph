@@ -1,0 +1,46 @@
+body{background: #eaeaea;}
+.content{width:80%;margin:0 auto;margin-top:100px;margin-bottom:100px;}
+.content>div{display: inline-block;}
+.form{width: 74%;background: #fff;box-shadow:0 1px 5px 2px #666;}
+h1{width:100%;background: #F5F5F5;height:60px;line-height: 60px;margin:0;border-bottom:1px solid #aaa;padding-left:15px;font-weight:bolder;font-family:"黑体";}
+.form ul li{width:80%;height:50px;line-height: 50px;position: relative;}
+.form ul li.higher{padding-bottom:30px;height:90px;position: relative;}
+.form ul li.higher p{position: absolute;top:35px;left:125px;color:gray;font-size:13px;}
+.form ul li.higher input{height:55%;line-height:100%;}
+.form ul li input,.form select{height:65%;border-radius:4px;border:1px solid #aaa;line-height:120%;}
+.form .input_text{width:500px;}
+.form .input_text1{width:300px;}
+.form .input_text2{width:245px;}
+.form #btn{width: 250px;vertical-align: middle;line-height:65%;margin-top:-3px;background: transparent;font-size:14px;}
+.form #btn:hover{background:#0090E3;}
+.form ul li label{width:100px;text-align: right;margin-right:20px;font: 14px "微软雅黑";font-weight:bold;}
+.form ul li.li_last{text-align: center;}
+.form ul li.li_last #sub{height:60%;vertical-align: middle;line-height:60%;width:100px;color:#fff;background:#225599;}
+.form ul li.li_last span{display: inline-block;margin-left:5px;color:#7a7a7a;}
+.form ul li.li_last span a{margin-left:5px;color:#6495ed;}
+.form ul li.li_last span a:hover{color:#225599;}
+#checkbox{display: inline-block;width:15px;height:15px;vertical-align: middle;margin-bottom:5px;}
+.form ul li.li_last #sub:hover{background:#1b4278;}
+.right{width: 250px;vertical-align: top;margin-left:20px;}
+.right div{margin-bottom:20px;box-shadow:0 1px 5px 2px #666;}
+.right ul{background:#fff;overflow: hidden;}
+.right .top li{height: 54px;width:54px;float:left;display: block;z-index: 2;padding:20px;margin:20px 10px;background-image:url(../images/login-icon-round.png);cursor: pointer;}
+.right .top li:nth-child(1){background-position:0 54px;margin-left:25px;}
+.right .top li:nth-child(2){background-position:108px 54px;}
+.right .top li:nth-child(3){background-position:54px 54px;}
+.right .top li:nth-child(1):hover{background-position:0 -54px;}
+.right .top li:nth-child(2):hover{background-position:108px -54px;}
+.right .top li:nth-child(3):hover{background-position:54px -54px;}
+.right h2{font:19px "黑体";font-weight:bold;text-indent:.5em;background: #F5F5F5;height:40px;line-height: 40px;margin: 0;padding:0 3px;}
+.right .bottom ul li{height:30px;font:15px "微软雅黑";}
+.right .bottom ul{padding:10px;}
+.right .bottom ul li span{font:15px "微软雅黑"; font-weight:bold;margin-right:5px;}
+.form .createSpan{font: 14px "微软雅黑";color: red;position:absolute;left:620px;top:15px;padding-left:20px;text-align: left;display:inline-block;width:200px;}
+.form .password_strong{position:absolute;top:20px;display: inline;width: 30px;height:6px;background:#ccc;padding-bottom:40px;background: url(../images/password_strong.png) no-repeat top left;text-align: center;}
+.form .password_strong.three{right:-110px}
+.form .password_strong.two{right:-70px}
+.form .password_strong.one{right:-30px}
+
+
+
+

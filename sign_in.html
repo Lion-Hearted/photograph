@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册</title>
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/sign_in.css"/>
+		<script src="js/jquery.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="js/sign_in.js"></script>
+		<script src="js/login.js"></script>
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" id="logo" href="index.html"></a>
+			</div>
+			<div class="navbar-collapse collapse" id="navbar">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">首页</a></li>
+					<li><a href="product.html">作品</a></li>
+					<li><a href="active.html">活动</a></li>
+					<li><a href="news.html">客片</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">更多<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+						 	<li><a href="#">论坛</a></li>
+						 	<li><a href="#">拍客</a></li>
+						 	<li><a href="#">发现</a></li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="javascript:onclick=login();">登录</a></li>
+					<li><a href="sign_in.html">注册</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+		<div class="content">
+			<div class="form">
+				<form action="">
+					<h1>用户注册</h1>
+					<ul>
+						<li>
+							<label for="tel">注册方式</label>
+							<select name="sign_type" id="sign_type">
+								<option value="0">手机号码</option>
+								<option value="1">邮箱</option>
+							</select>
+							<input type="text" name="tel" class="input_text1 tel" placeholder="请输入11位手机号码" required/>
+						</li>
+						<li>
+							<label for="mess">验证码</label><input type="text" name="mess" class="input_text2 tel" placeholder="请输入验证码" required/>
+							<input type="button" name="" id="btn" value="获取短信验证码" />
+						</li>
+						<li class="higher">
+							<label for="userName">用户名</label><input type="text"  name="userName" class="input_text userName tel" placeholder="请输入用户名" required/>
+							<p>不超过10个汉字或20个英文字符，不允许重名</p>
+						</li>
+						<li class="higher">
+							<label for="passWord">密码</label><input type="password"  name="passWord" class="input_text password tel" placeholder="请输入密码" required/>
+							<p>密码长度6-16位</p>
+						</li>
+						<li>
+							<label for="passWord1">确认密码</label><input type="password"  name="passWord1" class="input_text password_confirm tel" placeholder="请再输入一遍密码" required/>
+						</li>
+						<li class="li_last">
+							<input type="checkbox" checked id="checkbox"/>
+							<span>我已经认真阅读并同意接受<a href="#">用户协议</a></span>
+						</li>
+						<li class="li_last">
+							<input type="submit" value="立即注册" id="sub"/>
+							<span>如果已经注册请<a href="javascript:onclick=login();">登录</a></span>
+						</li>
+					</ul>
+				</form>
+			</div>
+			<div class="right">
+				<div class="top">
+					<h2>使用社交账号登录</h2>
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<div class="bottom">
+					<h2>加入后你可以</h2>
+					<ul>
+						<li><span>展示</span>批量照片上传和管理</li>
+						<li><span>分享</span>随时查看影友新作</li>
+						<li><span>收获</span>在摄影的道路上共同成长</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="myfooter">
+		<span>Copyright © 2015.Company name All rights reserved.More Templates Tel:010-110</span>
+	</div>
+	<div class="login">
+		<div class="login_content">
+			<h3>登录</h3>
+			<span class="close" onclick="login_close()">×</span>
+			<form action="">
+				<ul>
+				<li><label for="userName">账号</label><input type="text" class="text" required/></li>
+				<li><label for="password">密码</label><input type="password" class="text" required /></li>
+				<li class="short">
+					<input type="checkbox" checked class="checkbox" />
+					<span>下次自动登录</span>
+					<a href="#">忘记密码</a>
+					<input type="submit" value="登录" id="submit" />
+				</li>
+				<li class="short last">无需注册，用社交账号登录：<span></span></li>
+			</ul>
+			</form>
+		</div>
+	</div>
+	</body>
+</html>

@@ -1,0 +1,436 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar {
+    background: rgba(34, 34, 34, .2);
+    border-bottom: rgba(34, 34, 34, .2);
+}
+
+.navbar-nav li.active a {
+    background: rgba(8, 8, 8, .2);
+}
+
+
+/*=====================================================================================banner*/
+
+.banner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.banner img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.banner img.currentImg {
+    animation-name: animation-appear;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.banner img.preImg {
+    opacity: 0;
+    animation-name: animation-disappear;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.banner .num {
+    position: absolute;
+    right: 10%;
+    bottom: 30px;
+}
+
+.banner .num span {
+    display: inline-block;
+    width: 50px;
+    height: 5px;
+    background: rgba(100, 100, 100, .5);
+    cursor: pointer;
+}
+
+.banner .num span.currentSpan {
+    background: #000;
+}
+
+@keyframes animation-appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes animation-disappear {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+
+/*===============================================================================================banner-pages*/
+
+.banner_pages {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.banner_pages .left {
+    float: left;
+    width: 40%;
+    padding-left: 80px;
+}
+
+.banner_pages h2 {
+    font-family: "微软雅黑";
+    margin: 80px 0;
+}
+
+.banner_pages p {
+    font: 12px/20px "微软雅黑";
+    color: #333;
+    text-indent: 2em;
+}
+
+.banner_pages input {
+    display: block;
+    width: 150px;
+    height: 40px;
+    margin: 80px 50px;
+    background: linear-gradient(150deg, #dc6226 0%, #dc6226 30%, #535e64 70%, #535e64 100%);
+    border: none;
+    color: #ccc;
+    font-size: 16px;
+}
+
+.banner_pages input:hover {
+    background: linear-gradient(150deg, #535e64 0%, #535e64 30%, #dc6226 70%, #dc6226 100%);
+    cursor: pointer;
+}
+
+.banner_pages .right {
+    margin-left: 50%;
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.banner_pages .right .img {
+    position: absolute;
+    top: 0;
+    transition: transform .6s linear;
+    overflow: hidden;
+}
+
+.banner_pages .right .img.trf {
+    transform: translateX(70%);
+}
+
+.banner_pages .right .img:nth-child(1) {
+    left: 0;
+}
+
+.banner_pages .right .img:nth-child(2) {
+    left: 50px;
+}
+
+.banner_pages .right .img:nth-child(3) {
+    left: 100px;
+}
+
+.banner_pages .right .img:nth-child(4) {
+    left: 150px;
+}
+
+.banner_pages .right .img:nth-child(5) {
+    left: 200px;
+}
+
+.banner_pages .right .img:nth-child(6) {
+    left: 250px;
+}
+
+.banner_pages .right .img:nth-child(7) {
+    left: 300px;
+}
+
+.banner_pages .right .img:nth-child(8) {
+    left: 350px;
+}
+
+.banner_pages .right .img .before {
+    width: 60%;
+    height: 40px;
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    background: rgba(160, 71, 31, .7);
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    opacity: 0;
+    transform: translateX(-100%) rotateZ(-240deg);
+    transition: all 1s linear;
+}
+
+.banner_pages .right .img .before.trf {
+    opacity: 1;
+    top: 50%;
+    transform: translateX(0) rotateZ(0);
+}
+
+
+/*===============================================================================================icon_scroll*/
+
+.icon_scroll {
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+    position: relative;
+    height: 300px;
+}
+
+
+/*.icon_scroll>div{float: left;width:250px;margin-left:50px;}*/
+
+.icon_scroll h2 {
+    font: 20px "微软雅黑";
+    font-weight: bolder;
+    margin-bottom: 60px;
+}
+
+.icon_scroll h3 {
+    font: 16px;
+    padding-top: 60px;
+    margin-bottom: 10px;
+    color: #dc6226;
+}
+
+.icon_scroll .iconLeft h3 {
+    background: url(../images/用户.png) no-repeat 50% top;
+}
+
+.icon_scroll .iconMiddle h3 {
+    background: url(../images/image.png) no-repeat 50% top;
+}
+
+.icon_scroll .iconRight h3 {
+    background: url(../images/camera.png) no-repeat 50% top;
+}
+
+.icon_scroll p {
+    font: 12px "微软雅黑";
+    color: #aaa;
+}
+
+
+/*.icon_scroll .icon:nth-child(2){transform: translateX(-100%);opacity: 0;transition:all 2s linear;}
+.icon_scroll .icon:nth-child(3){transform: translateY(100%);opacity: 0;transition:all 2s linear;}
+.icon_scroll .icon:nth-child(4){transform: translateX(100%);opacity: 0;transition:all 2s linear;}*/
+
+.icon_scroll>div {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin-top: 50px;
+    opacity: 0;
+    transition: all .6s linear;
+}
+
+.icon_scroll .aaa {
+    opacity: 1;
+}
+
+.icon_scroll .iconLeft {
+    left: 0%;
+}
+
+.icon_scroll .iconMiddle {
+    left: 37%;
+    top: 100px;
+}
+
+.icon_scroll .iconRight {
+    left: 70%
+}
+
+.icon_scroll .iconLeft.aaa {
+    left: 5%;
+}
+
+.icon_scroll .iconMiddle.aaa {
+    left: 37%;
+    top: 0;
+}
+
+.icon_scroll .iconRight.aaa {
+    left: 68%
+}
+
+
+/*=================================================================================================footer_banner*/
+
+#footer_banner {
+    width: 100%;
+    overflow: hidden;
+}
+
+.footer_banner {
+    width: 300%;
+    height: 400px;
+    background: url(../images/t-banner.jpg);
+    position: relative;
+}
+
+.footer_banner input {
+    position: absolute;
+    bottom: 80px;
+    z-index: 100;
+}
+
+.footer_banner .one {
+    left: 120px;
+}
+
+.footer_banner .two {
+    left: 140px;
+}
+
+.footer_banner .three {
+    left: 160px;
+}
+
+.footer_banner .section {
+    float: left;
+    margin-top: 100px;
+    width: 33.3%;
+}
+
+.footer_banner .section img {
+    float: left;
+    margin: 0 50px;
+    margin-top: -40px;
+}
+
+.footer_banner .section h3 {
+    font: 16px "微软雅黑";
+    color: #fff;
+    padding-top: 50px;
+    background: url(../images/气泡.png) no-repeat 300px 0;
+}
+
+.footer_banner .section p {
+    display: block;
+    font: 12px "微软雅黑";
+    color: #fff;
+    width: 80%;
+    margin-top: 10px;
+}
+
+.footer_banner .scroll {
+    height: 400px;
+    transition: transform 1s linear;
+}
+
+.footer_banner .one:checked~.scroll {
+    transform: translateX(0);
+}
+
+.footer_banner .two:checked~.scroll {
+    transform: translateX(-33.3%);
+}
+
+.footer_banner .three:checked~.scroll {
+    transform: translateX(-66.6%);
+}
+
+.myfooter span {
+    margin-left: -250px;
+}
+
+@media only screen and (min-width: 925px) and (max-width: 1170px) {
+    .banner_pages .right .img {
+        margin-left: 10px;
+    }
+    .banner_pages .right .img img {
+        width: 250px;
+    }
+    .banner_pages .left {
+        width: 40%;
+        padding-left: 40px;
+    }
+    .index_style ul.one.aaa {
+        right: 400px;
+        opacity: 1;
+    }
+    .index_style ul.two.aaa {
+        right: 20px;
+        opacity: 1;
+    }
+    .index_style h2 {
+        margin: 110px 50px;
+    }
+    .icon_scroll .iconLeft.aaa {
+        left: 2%;
+    }
+    .icon_scroll .iconMiddle.aaa {
+        left: 37%;
+        top: 0;
+    }
+    .icon_scroll .iconRight.aaa {
+        left: 75%
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 924px) {
+    .banner_pages .right .img {
+        margin-left: 10px;
+    }
+    .banner_pages .right .img img {
+        width: 230px;
+    }
+    .banner_pages .left {
+        width: 30%;
+        padding-left: 20px;
+    }
+    .index_style ul.one.aaa {
+        right: 360px;
+        opacity: 1;
+    }
+    .index_style ul.two.aaa {
+        right: 10px;
+        opacity: 1;
+    }
+    .index_style h2 {
+        margin: 110px 20px;
+    }
+    .icon_scroll .iconLeft.aaa {
+        left: 2%;
+    }
+    .icon_scroll .iconMiddle.aaa {
+        left: 37%;
+        top: 0;
+    }
+    .icon_scroll .iconRight.aaa {
+        left: 75%
+    }
+}
