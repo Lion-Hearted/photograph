@@ -104,7 +104,8 @@ body {
 }
 
 .banner_pages p {
-    font: 12px/20px "微软雅黑";
+    font-family: "微软雅黑";
+    font: 12px;
     color: #333;
     text-indent: 2em;
 }
@@ -140,7 +141,7 @@ body {
     overflow: hidden;
 }
 
-.banner_pages .right .img.trf {
+.banner_pages .right .img .trf {
     transform: translateX(70%);
 }
 
@@ -273,16 +274,16 @@ body {
     left: 70%
 }
 
-.icon_scroll .iconLeft.aaa {
+.icon_scroll .iconLeft .aaa {
     left: 5%;
 }
 
-.icon_scroll .iconMiddle.aaa {
+.icon_scroll .iconMiddle .aaa {
     left: 37%;
     top: 0;
 }
 
-.icon_scroll .iconRight.aaa {
+.icon_scroll .iconRight .aaa {
     left: 68%
 }
 
