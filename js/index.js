@@ -15,8 +15,8 @@ function showNext(num) {
     spanObjs[currentNum].className = "currentSpan";
 }
 window.onload = function() {
-    $('.navbar .active').find('a').css('background', 'rgba(8,8,8,.2)');
-    interval = setInterval("showNext();", 2000);
+    $('.navbar .active').find('a').css('background','rgba(8,8,8,.2)');
+    interval = setInterval("showNext()", 2000);
     var imgObjs = document.getElementsByClassName('banner')[0].getElementsByTagName('img');
     var spanObjs = document.getElementsByClassName('banner')[0].getElementsByTagName('span');
     totalNum = imgObjs.length;
@@ -25,7 +25,7 @@ window.onload = function() {
             clearInterval(interval);
         };
         imgObjs[i].onmouseout = function() {
-            interval = setInterval("showNext();", 2000);
+            interval = setInterval("showNext()", 2000);
         };
         spanObjs[i].onclick = function() {
             clearInterval(interval);
@@ -60,6 +60,8 @@ function pages() {
     $('.banner_pages .right .img').bind('click', function() {
         $(this).siblings().children('.before').removeClass('trf');
         $(this).children('.before').addClass('trf');
+        console.log($(this).nextAll());
+        console.log($(this).nextAll().size());
         if ($(this).nextAll().size()) {
             if (!$(this).next().hasClass('trf')) {
                 $(this).nextAll().addClass('trf');
